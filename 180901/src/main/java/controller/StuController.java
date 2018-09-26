@@ -19,10 +19,12 @@ public class StuController {
 	
 	@RequestMapping(value="show.do")
 	public String show () {
-		
 		return "login";
 	}
-	
+	@RequestMapping(value="show2.do")
+	public String show2 () {
+		return "login2";
+	}
 	@RequestMapping(value="show1.do",method=RequestMethod.POST)
 	public String show1 (Student stu) {
 		int s = serviceStu.selectStudentByName(stu);
